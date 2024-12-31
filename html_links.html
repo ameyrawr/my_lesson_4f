@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Links</title>
+
+	<style>
+		a:link
+		{
+			color: beige;
+			background-color: maroon; <!--transparent (KALAU TAK NAK)-->
+			text-decoration: underline; <!--//NONE KALAU TAKNAK-->
+		}
+
+		a:visited
+		{
+			color: green;
+			background-color: yellow;
+			text-decoration: underline;
+
+		}
+		a:hover, a:active
+		{
+			color: black;
+			background-color: maroon;
+			text-decoration: underline;
+
+		}
+		
+	</style>
+</head>
+<body>
+
+	<h1>INTERNAL LINKS</h1>
+	<a href="my_first_page.html">HTML MY PAGE</a>
+
+	<h1>EXTERNAL LINKS</h1>
+	<a href="https://library.umk.edu.my/my/index.cfm" title="this link is UMK Bachok">UMK BACHOK LINK</a>
+
+	<h1>EXTERNAL LINKS</h1>
+	<a href="https://www.instagram.com/">INSTAGRAM LINK</a>
+
+	<h1>TARGET ATTRIBUTES</h1>
+
+	<!--_self (SAME TAB), _blank (NEW TAB), _parent (TAK EFFECT YANG BAWAH), _top (content yang top sahaja)-->
+
+	<a href="html_style.html" target="_blank" title="This links root to HTML Style">HTML STYLE</a> <br> <!--BR untuk enter-->
+
+	<a href="https://www.instagram.com/" target="_blank" title="This link bring u to owner instagram">AMY INSTAGRAM</a>	
+
+	<h1>IMAGE AS LINK</h1>
+	<a href="https://www.instagram.com/" target="_blank" title="This will bring you to owner's instagram"> <img src="buttons/button.png"></a>
+
+	<h1>BUTTON AS LINK</h1>
+	<button onclick="document.location='html_formatting.html'">HTML Format</button>
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+</head>
+<body>
+
+
+	<h1>1)</h1>
+
+	<p id="content1">Welcome to my page</p>
+
+	<button type="button" onclick='document.getElementById("content1").innerHTML="I love to learn web design"'>change content</button>
+
+	<h1>2)</h1>
+	<p id="style1">Hello! Welcome to Faculty of Information Management</p>
+
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize = "25px";
+			document.getElementById("style1").style.fontFamily = "Courier New";
+			document.getElementById("style1").style.color = "blue";
+			document.getElementById("style1").style.backgroundColor = "yellow";
+		}
+	</script>
+<button type="button" onclick="myStyle()">Change style</button>
+
+<h1>3)</h1>
+
+<script>
+	function myGambar(a)
+	{
+		var pic;
+		if (a==0)
+		{
+			pic="images/intern_3.JPG"
+		}
+		else
+		{
+			pic="images/intern_4.JPG"
+		}
+		document.getElementById('gambar').src=pic;
+
+	}
+</script>
+
+<img src="images/intern_3.JPG" id="gambar" width="550px" height="300px">
+<p>
+	<button type="button" onclick="myGambar(0)">before</button>
+	<button type="button" onclick="myGambar(1)">after</button>
+</p>
+
+<h1>4)</h1>
+<button type="button" onclick="AlertBox()"></button>
+<script>
+	{
+		alert(" Assalamualaikum \n Selamat datang ke kelas IMS456 \n Semoga kita beroleh ilmu bermanfaat")
+	}
+</script>
+
+<h1>5)</h1>
+<p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7584908073027!2d101.70740279678961!3d3.158248200000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0xc955b08cfc1aae29!2sSuria%20KLCC!5e0!3m2!1sen!2smy!4v1734498390736!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</p>
+</body>
+</html>
